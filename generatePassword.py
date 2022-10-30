@@ -16,10 +16,11 @@ class generatePassword:
         self.cap = cap
         self.low = low
         password = ""
+        f = open("password.txt", "a")
 
         if (not specialChar and not num  and not cap and not low):
             pLength = 0
-            print("You need to select atleast one option")
+            f.write("You need to select atleast one option")
 
         while (pLength > 0):
             randInt = random.randint(0, 3)
@@ -35,5 +36,5 @@ class generatePassword:
             elif (randInt == 3 and low):
                 password += random.choice(lowList)
                 pLength -= 1
-
-        print(password)
+        password += "\n"
+        f.write(password)
