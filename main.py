@@ -1,3 +1,12 @@
+##################################
+#A program that allows the user to make decisions
+#   regarding what type of password they want
+#   then returns a randomly generated password
+#Written by Michael Giardina
+#Python 3.9.1
+#30 OCT 2022
+##################################
+
 from tkinter import *
 from generatePassword import *
 
